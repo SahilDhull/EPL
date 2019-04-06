@@ -18,7 +18,7 @@ CREATE TABLE PLAYER(
 
 CREATE TABLE SEASON(
 	SEASON_ID INTEGER PRIMARY KEY,
-	STATUS VARCHAR(10),
+	STATUS VARCHAR(10) DEFAULT 'Ongoing',
 	CHECK (STATUS IN ('Finished','Ongoing'))
 );
 
@@ -449,6 +449,16 @@ BEGIN
 END;
 
 -- Shubham
+CREATE TRIGGER GOALLL
+AFTER INSERT
+ON GOALS
+BEGIN
+UPDATE PLAYER_STATS 
+SET GOALS_SCORED = 1 + GOALS_SCORED,
+	ASSISTS = 1 + ASSISTS
+where new.ASSIST_BY = PLAYER_ID and new.SEASON_ID = SEASON_ID;
+END;
+
 CREATE TRIGGER BOOKINGGG
 AFTER INSERT
 ON BOOKING
@@ -483,7 +493,7 @@ BEGIN
 UPDATE PLAYER_STATS
 SET CLEAN_SHEET = CLEAN_SHEET + 1
 where 	
-		(new.HOME_SCORE = 0
+		((new.HOME_SCORE = 0
 		and PLAYER_ID = 
 						(
 							select B.PLAYER_ID
@@ -507,7 +517,7 @@ where
 																						where	A.MATCH_ID = new.MATCH_ID
 																				)
 						)
-		); 
+		)) and SEASON_ID = new.MATCH_ID/380; 
 END;
 
 CREATE TRIGGER SUBSTITUTIONNNNNN_OUT
@@ -542,7 +552,7 @@ where PLAYER_ID in 	(
 						select A.PLAYER_ID
 						from LINEUP as A
 						where A.isSUB = 0 and new.MATCH_ID = A.MATCH_ID
-					);
+					) and SEASON_ID = new.MATCH_ID/380;
 END;
 
 CREATE TRIGGER MATCHES_PLAYEDDDDD_SUB
@@ -552,7 +562,7 @@ when  old.isSUB = 1 and new.isSUB = 0
 BEGIN
 UPDATE PLAYER_STATS
 SET MATCHES_PLAYED = MATCHES_PLAYED + 1
-where PLAYER_ID = new.PLAYER_ID;
+where PLAYER_ID = new.PLAYER_ID and SEASON_ID = new.MATCH_ID/380;
 END;
 
 CREATE TRIGGER MATCHES_STARTEDDDD
@@ -565,7 +575,7 @@ where PLAYER_ID in 	(
 						select A.PLAYER_ID
 						from LINEUP as A
 						where A.isSUB = 0 and new.MATCH_ID = A.MATCH_ID
-					);
+					) and SEASON_ID = new.MATCH_ID/380;
 END;
 
 CREATE TRIGGER INS_STATTTTTTTT
@@ -574,7 +584,6 @@ ON PLAYER
 BEGIN
 insert into PLAYER_STATS(PLAYER_ID,SEASON_ID) values (new.PLAYER_ID, (select SEASON_ID from SEASON where STATUS = "Ongoing"));
 END;
-
 
 -- change in transfer and club_player
 -- STATUS WITH SEASON
