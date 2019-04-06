@@ -31,5 +31,12 @@ TRANSFER
 
 
 Order of Insertion:
-Player
-Club and Season
+.read create.sql
+.read player.sql
+.read club_and_season.sql
+.read match.sql
+.read club_player.sql
+.read stadium.sql
+.read club_stadium.sql
+.read match_in_season.sql
+.read playing_clubs.sql
