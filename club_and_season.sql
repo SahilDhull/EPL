@@ -79,8 +79,6 @@ insert into club(ABBR,CLUB_NAME,CLUB_CITY,PRESIDENT,OWNER,TITLES)
 -- 	values("FUL","FULHAM","LONDON","PRESI_19","OWNER_19",0);
 
 
-
-
 insert into SEASON(SEASON_ID)
 	values(1);
 
