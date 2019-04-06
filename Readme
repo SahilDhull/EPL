@@ -40,3 +40,10 @@ Order of Insertion:
 .read club_stadium.sql
 .read match_in_season.sql
 .read playing_clubs.sql
+.read lineup.sql
+.read add.sql
+
+
+add.sql:
+insert into GOALS(MATCH_ID,PLAYER_ID,CLUB_ID,GOAL_TIME,EXTRATIME,ASSIST_BY,OWN_GOAL)
+  values(1,1,1,43,0,2,0);
