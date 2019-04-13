@@ -50,4 +50,6 @@ To update club_player insertion
 .read playing_clubs.sql 	</br>
 .read lineup.sql  	</br>
 .read ref.sql 		</br>
+.read managers.sql  </br>
+.read club_manager.sql </br>
 .read add.sql 		</br>

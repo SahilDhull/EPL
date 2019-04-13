@@ -48,4 +48,6 @@ To update club_player insertion
 .read playing_clubs.sql
 .read lineup.sql
 .read ref.sql
+.read managers.sql
+.read club_manager.sql
 .read add.sql
