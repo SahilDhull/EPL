@@ -32,11 +32,6 @@ CLUB_STATS</br>
 PLAYER_STATS</br>
 TRANSFER</br>
 
-
-### Changes/TODO:
-Season status set to 'Ongoing' on default</br>
-To update club_player insertion
-
 ## Order of Insertion:
 
 .read create.sql</br>
