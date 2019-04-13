@@ -80,8 +80,6 @@ To update club_player insertion
 
 .read playing_clubs.sql
 
-.read lineup.sql
-
-.read ref.sql
-
-.read add.sql
+.read lineup.sql  	</br>
+.read ref.sql 		</br>
+.read add.sql 		</br>
