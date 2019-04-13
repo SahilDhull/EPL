@@ -1,7 +1,9 @@
-Season status set to 'Ongoing' on default
-To update club_player insertion
+# TABLES
 
--- ENTITY TABLES: (7)
+DB: epl.db
+
+## ENTITY TABLES: (7)
+
 CLUB,
 PLAYER, 
 SEASON,
@@ -10,7 +12,8 @@ REFEREE,
 MATCH,
 MANAGER
 
--- RELATION TABLES: (17)
+## RELATION TABLES: (17)
+
 CLUB_MANAGER,
 CLUB_ASST_MANAGER,
 CLUB_STADIUM,
@@ -29,21 +32,20 @@ CLUB_STATS,
 PLAYER_STATS, 
 TRANSFER
 
+## Changes/TODO:
+Season status set to 'Ongoing' on default
+To update club_player insertion
 
 Order of Insertion:
 .read create.sql
+.read trigger.sql
 .read player.sql
 .read club_and_season.sql
 .read match.sql
 .read club_player.sql
 .read stadium.sql
 .read club_stadium.sql
-.read match_in_season.sql
 .read playing_clubs.sql
 .read lineup.sql
-.read add.sql
 .read ref.sql
-
-add.sql:
-insert into GOALS(MATCH_ID,PLAYER_ID,CLUB_ID,GOAL_TIME,EXTRATIME,ASSIST_BY,OWN_GOAL)
-  values(1,1,1,43,0,2,0);
+.read add.sql
