@@ -38,13 +38,14 @@ TRANSFER
 .read trigger.sql
 .read player.sql
 .read club_and_season.sql
-.read match.sql
 .read club_player.sql
 .read stadium.sql
 .read club_stadium.sql
-.read playing_clubs.sql
-.read lineup.sql
 .read ref.sql
 .read managers.sql
 .read club_manager.sql
+.read match.sql
+.read playing_clubs.sql
+.read lineup.sql
 .read add.sql
+.read query.sql
