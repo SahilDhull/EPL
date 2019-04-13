@@ -201,13 +201,6 @@ UPDATE PLAYER_STATS
 SET RED_COUNT = 
 	case
 		when new.BOOKING_TYPE = 'R' then RED_COUNT + 1
-		when new.BOOKING_TYPE = 'Y' and 2 == 	(
-													select count(*)
-													from BOOKING as A
-													where 	A.MATCH_ID = new.MATCH_ID 
-															and A.PLAYER_ID = new.PLAYER_ID
-															and A.BOOKING_TYPE = 'Y'
-												) 	then RED_COUNT + 1
 		else RED_COUNT
 	end,
 	YELLOW_COUNT = 
@@ -218,6 +211,19 @@ SET RED_COUNT =
 where NEW.PLAYER_ID = PLAYER_ID and SEASON_ID = (NEW.MATCH_ID-1)/380 + 1;
 END;
 
+CREATE TRIGGER DOUBLE_YELLOW
+AFTER INSERT ON BOOKING
+when new.BOOKING_TYPE = 'Y' and 2 == 	(
+													select count(*)
+													from BOOKING as A
+													where 	A.MATCH_ID = new.MATCH_ID 
+															and A.PLAYER_ID = new.PLAYER_ID
+															and A.BOOKING_TYPE = 'Y'
+												)
+BEGIN
+INSERT INTO BOOKING(MATCH_ID,PLAYER_ID,BOOKING_TYPE)
+VALUES (NEW.MATCH_ID,NEW.PLAYER_ID,'R');
+END;
 
 CREATE TRIGGER GIVE_CLEAN_SHEET
 AFTER UPDATE
