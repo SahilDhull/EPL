@@ -4,82 +4,56 @@ DB: epl.db
 
 ## ENTITY TABLES: (7)
 
-CLUB,
+CLUB</br>
 
 PLAYER, 
 
-SEASON,
+SEASON</br>
 
-STADIUM,
+STADIUM</br>
 
-REFEREE,
+REFEREE</br>
 
-MATCH,
+MATCH</br>
 
 MANAGER
 
 ## RELATION TABLES: (17)
 
-CLUB_MANAGER,
-
-CLUB_ASST_MANAGER,
-
-CLUB_STADIUM,
-
-CLUB_PLAYER,
-
-SEASON_CHART,
-
-MATCH_IN_SEASON,
-
-SEASON_CHAMPION,
-
-PLAYING_CLUBS,
-
-MOTM,
-
-MATCH_REFEREE,
-
-GOALS,
-
+CLUB_MANAGER</br>
+CLUB_ASST_MANAGER</br>
+CLUB_STADIUM</br>
+CLUB_PLAYER</br>
+SEASON_CHART</br>
+MATCH_IN_SEASON</br>
+SEASON_CHAMPION</br>
+PLAYING_CLUBS</br>
+MOTM</br>
+MATCH_REFEREE</br>
+GOALS</br>
 BOOKING, 
-
 LINEUP, 
-
 SUBSTITUTION, 
-
 CLUB_STATS, 
-
 PLAYER_STATS, 
-
 TRANSFER
 
 
 ### Changes/TODO:
-Season status set to 'Ongoing' on default
-
+Season status set to 'Ongoing' on default</br>
 To update club_player insertion
 
 ## Order of Insertion:
 
-.read create.sql
-
-.read trigger.sql
-
-.read player.sql
-
-.read club_and_season.sql
-
-.read match.sql
-
-.read club_player.sql
-
-.read stadium.sql
-
-.read club_stadium.sql
-
-.read playing_clubs.sql
-
+.read create.sql</br>
+.read trigger.sql</br>
+.read player.sql</br>
+.read club_and_season.sql</br>
+.read match.sql </br>
+.read club_player.sql </br>
+.read stadium.sql </br>
+.read club_stadium.sql 		</br>
+.read playing_clubs.sql 	</br>
 .read lineup.sql  	</br>
 .read ref.sql 		</br>
 .read add.sql 		</br>
