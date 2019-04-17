@@ -34,18 +34,28 @@ TRANSFER
 
 
 -- Order of Insertion:
+
 .read create.sql
 .read trigger.sql
+
 .read player.sql
-.read club_and_season.sql
-.read club_player.sql
+.read club.sql
+.read season.sql
 .read stadiums.sql
-.read club_stadium.sql
 .read referee.sql
 .read managers.sql
-.read club_manager.sql
 .read match.sql
-.read playing_clubs.sql
+
 .read lineup.sql
+.read club_manager.sql
+.read club_stadium.sql
+.read club_player.sql
+
+.read playing_clubs.sql
+.read goals.sql
+.read match_referee.sql
+.read booking.sql
+.read substitution.sql
+.read transfer.sql
 
 .read query.sql
