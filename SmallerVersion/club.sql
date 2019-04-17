@@ -1,0 +1,14 @@
+.headers on
+.mode column
+
+PRAGMA foreign_keys=ON;
+
+insert into club(ABBR,CLUB_NAME,CLUB_CITY,PRESIDENT,OWNER,TITLES)
+	values("ARS","ARSENAL","LONDON","PRESI_4","OWNER_4",6);
+
+insert into club(ABBR,CLUB_NAME,CLUB_CITY,PRESIDENT,OWNER,TITLES)
+	values("BOU","BOURNEMOUTH","NO IDEA","PRESI_15","OWNER_15",0);
+
+insert into club(ABBR,CLUB_NAME,CLUB_CITY,PRESIDENT,OWNER,TITLES)
+	values("BRI","BRIGHTON","NO IDEA","PRESI_18","OWNER_18",0);
+
