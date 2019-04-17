@@ -95,24 +95,24 @@ insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(2
 insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(2,3,36,1,0,"ST");
 insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(2,3,37,1,0,"ST");
 
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,1,0,0,"GK");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,2,0,0,"LB");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,3,0,0,"CB");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,4,0,0,"CB");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,5,0,0,"RB");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,6,0,0,"CDM");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,7,0,0,"CM");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,8,0,0,"CM");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,9,0,0,"LM");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,10,0,0,"RM");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,11,0,0,"ST");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,12,1,0,"ST");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,13,1,0,"ST");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,14,1,1,"ST");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,15,1,0,"ST");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,16,1,0,"ST");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,17,1,1,"ST");
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,18,1,0,"ST");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,38,0,0,"GK");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,39,0,0,"LB");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,40,0,0,"CB");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,41,0,0,"CB");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,42,0,0,"RB");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,43,0,0,"CDM");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,44,0,0,"CM");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,45,0,0,"CM");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,46,0,0,"LM");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,47,0,0,"RM");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,48,0,0,"ST");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,49,1,0,"ST");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,50,1,0,"ST");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,51,1,1,"ST");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,52,1,0,"ST");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,53,1,0,"ST");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,54,1,1,"ST");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,3,55,1,0,"ST");
 
 insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(1,5,1,0,0,"GK");
 insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(1,5,2,0,0,"LB");
@@ -133,7 +133,7 @@ insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(1
 insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(1,5,17,1,1,"ST");
 insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(1,5,18,1,0,"ST");
 
-insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,5,37,0,0,"GK");
+insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,5,55,0,0,"GK");
 insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,5,38,0,0,"LB");
 insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,5,39,0,0,"CB");
 insert into lineup(CLUB_ID,MATCH_ID,PLAYER_ID,isSUB,SUB_PLAYED,POSITION)values(3,5,40,0,0,"CB");
