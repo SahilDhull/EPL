@@ -39,9 +39,9 @@ TRANSFER</br>
 .read player.sql</br>
 .read club_and_season.sql</br>
 .read club_player.sql </br>
-.read stadium.sql </br>
+.read stadiums.sql </br>
 .read club_stadium.sql 		</br>
-.read ref.sql 		</br>
+.read referee.sql 		</br>
 .read managers.sql  </br>
 .read club_manager.sql </br>
 .read match.sql </br>
