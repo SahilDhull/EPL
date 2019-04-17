@@ -44,6 +44,8 @@ TRANSFER
 .read stadiums.sql
 .read referee.sql
 .read managers.sql
+
+
 .read match.sql
 
 .read lineup.sql
@@ -56,6 +58,8 @@ TRANSFER
 .read match_referee.sql
 .read booking.sql
 .read substitution.sql
+.read finish.sql
+
 .read transfer.sql
 
 .read query.sql
