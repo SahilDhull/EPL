@@ -45,14 +45,13 @@ TRANSFER
 .read referee.sql
 .read managers.sql
 
-
-.read match.sql
-
-.read lineup.sql
 .read club_manager.sql
 .read club_stadium.sql
 .read club_player.sql
 
+
+.read match.sql
+.read lineup.sql
 .read playing_clubs.sql
 .read goals.sql
 .read match_referee.sql
@@ -60,6 +59,10 @@ TRANSFER
 .read substitution.sql
 .read finish.sql
 
+.read demo.sql
+
+
+-- Do not run
 .read transfer.sql
 
 .read query.sql
