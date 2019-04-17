@@ -226,7 +226,8 @@ INSERT INTO BOOKING(MATCH_ID,PLAYER_ID,BOOKING_TYPE,BOOKING_TIME)
 VALUES (NEW.MATCH_ID,NEW.PLAYER_ID,'R',NEW.BOOKING_TIME);
 END;
 
-CREATE TRIGGER GIVE_CLEAN_SHEET
+
+CREATE TRIGGER SEASON_FINISHED
 AFTER UPDATE
 ON MATCH
 when OLD.STATUS = 'Ongoing' and NEW.STATUS='Finished'
@@ -238,10 +239,17 @@ CASE
 	ELSE 'Ongoing'
 END
 WHERE SEASON_ID = (NEW.MATCH_ID-1)/6+1;
+END;
+
+CREATE TRIGGER HOME_GIVE_CLEAN_SHEET
+AFTER UPDATE
+ON MATCH
+when OLD.STATUS = 'Ongoing' and NEW.STATUS='Finished'
+BEGIN
 UPDATE PLAYER_STATS
 SET CLEAN_SHEET = CLEAN_SHEET + 1
 where 	
-		((new.HOME_SCORE = 0
+		(new.HOME_SCORE = 0
 		and PLAYER_ID = 
 						(
 							select B.PLAYER_ID
@@ -252,8 +260,20 @@ where
 																						where	A.MATCH_ID = new.MATCH_ID
 																				)
 						)
-		)
-		or
+		) and SEASON_ID = (new.MATCH_ID-1)/6 + 1; 
+
+END;
+
+
+
+CREATE TRIGGER AWAY_GIVE_CLEAN_SHEET
+AFTER UPDATE
+ON MATCH
+when OLD.STATUS = 'Ongoing' and NEW.STATUS='Finished'
+BEGIN
+UPDATE PLAYER_STATS
+SET CLEAN_SHEET = CLEAN_SHEET + 1
+where
 		(new.AWAY_SCORE = 0
 		and PLAYER_ID = 
 						(
@@ -265,8 +285,12 @@ where
 																						where	A.MATCH_ID = new.MATCH_ID
 																				)
 						)
-		)) and SEASON_ID = (new.MATCH_ID-1)/6 + 1; 
+		) and SEASON_ID = (new.MATCH_ID-1)/6 + 1; 
 END;
+
+
+
+
 
 CREATE TRIGGER SUBSTITUTION_PLAYER_OUT
 AFTER INSERT
