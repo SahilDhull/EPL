@@ -1,15 +1,16 @@
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,1,1,16,8,64,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(2,1,1,17,9,82,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,1,2,34,24,68,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(2,1,2,33,25,72,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,2,2,33,24,70,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(2,2,2,36,29,82,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,2,3,51,42,89,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,3,3,51,42,79,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,3,1,15,6,53,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,4,3,53,39,92,3);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(2,4,3,52,45,56,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(3,4,3,55,43,66,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,4,1,15,7,66,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,5,1,14,10,63,2);
-insert into substitution(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)values(1,5,2,21,35,72,2);
+insert into substitution
+(SUBSTITUTION_COUNT,MATCH_ID,CLUB_ID,PLAYER_IN,PLAYER_OUT,STIME,PHASE)
+values
+(1,    1,    1,    16,    8,    64,    2),    
+(2,    1,    1,    17,    9,    82,    2),    
+(1,    1,    2,    40,    39,    68,    2),    
+(2,    1,    2,    41,    38,    72,    2),    
+(1,    2,    1,    16,    9,    70,    2),    
+(2,    2,    1,    17,    8,    82,    2),    
+(1,    2,    3,    68,    57,    89,    2),     
+(1,    3,    2,    42,    37,    53,    2),    
+(1,    4,    2,    51,    38,    89,    3),    
+(2,    4,    2,    50,    36,    56,    2),     
+(1,    4,    1,    15,    7,    66,    2),    
+(1,    5,    1,    14,    10,    63,    2),    
+(1,    5,    3,    68,    59,    72,    2);
