@@ -1,5 +1,5 @@
 insert into player(NAME,NATIONALITY,PREF_POSITION)
-	values("Alexis Sanchez","Chile","LW");
+	values("Arnab Bhattacharya","Chile","LW");
 insert into player(NAME,NATIONALITY,PREF_POSITION)
 	values("Mesut Ozil","Germany","AM");
 insert into player(NAME,NATIONALITY,PREF_POSITION)
